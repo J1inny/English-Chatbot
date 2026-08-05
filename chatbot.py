@@ -2,7 +2,6 @@ import os
 from pathlib import Path
 from typing import Dict, List, Tuple
 
-from dotenv import load_dotenv
 from langchain_chroma import Chroma
 from langchain_openai import OpenAIEmbeddings
 from openai import OpenAI
@@ -18,7 +17,17 @@ BASE_DIR = Path(__file__).resolve().parent
 LEVEL_DB_PATH = BASE_DIR / "chroma_db" / "levels"
 TOPIC_DB_PATH = BASE_DIR / "chroma_db" / "topics"
 
-load_dotenv(BASE_DIR / ".env")
+# --------------------------------------------
+# 로컬에서는 .env 사용, Streamlit Cloud에서는 Secrets 사용
+# --------------------------------------------
+try:
+    from dotenv import load_dotenv
+
+    env_path = BASE_DIR / ".env"
+    if env_path.exists():
+        load_dotenv(env_path)
+except ModuleNotFoundError:
+    pass
 
 api_key = os.getenv("OPENAI_API_KEY")
 
