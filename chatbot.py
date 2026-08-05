@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 from langchain_chroma import Chroma
 from langchain_openai import OpenAIEmbeddings
 from openai import OpenAI
+import streamlit as st
 
 
 # --------------------------------------------------
@@ -22,10 +23,10 @@ load_dotenv(BASE_DIR / ".env")
 api_key = os.getenv("OPENAI_API_KEY")
 
 if not api_key:
-    raise ValueError(
-        "OPENAI_API_KEY를 찾지 못했습니다. "
-        ".env 파일이 저장되었는지 확인하세요."
-    )
+    api_key = st.secrets.get("OPENAI_API_KEY")
+
+if not api_key:
+    raise ValueError("OPENAI_API_KEY를 찾지 못했습니다.")
 
 client = OpenAI(api_key=api_key)
 
