@@ -1,0 +1,97 @@
+[
+  {
+    "id": "daily_routines",
+    "data_type": "topic_material",
+    "topic": "daily_routines",
+    "topic_description": "Conversations about waking up, getting ready, going to school or work, and what someone usually does every day, including time and frequency.",
+    "key_expressions": [
+      "I wake up at 7.",
+      "I usually have breakfast at home.",
+      "I go to school by bus.",
+      "I do my homework after dinner.",
+      "I go to bed around 11."
+    ],
+    "assistant_questions": [
+      "What time do you usually wake up?",
+      "What do you do after school?",
+      "How do you get to school every day?",
+      "What is your favorite part of the day?"
+    ]
+  },
+  {
+    "id": "school_life",
+    "data_type": "topic_material",
+    "topic": "school_life",
+    "topic_description": "Conversations about classes, subjects, teachers, friends, school events, and feelings about tests or homework.",
+    "key_expressions": [
+      "My favorite subject is math.",
+      "I have four classes today.",
+      "The test was difficult.",
+      "I have a lot of homework.",
+      "We have a school festival next week."
+    ],
+    "assistant_questions": [
+      "What subject do you like the most?",
+      "How was your test today?",
+      "Do you have any homework this week?",
+      "Who is your best friend at school?"
+    ]
+  },
+  {
+    "id": "family",
+    "data_type": "topic_material",
+    "topic": "family",
+    "topic_description": "Conversations about family members, what they do, family activities, and relationships at home.",
+    "key_expressions": [
+      "I have one brother and one sister.",
+      "My mother is a teacher.",
+      "We eat dinner together every day.",
+      "My grandparents live nearby.",
+      "I help my family with chores."
+    ],
+    "assistant_questions": [
+      "How many people are in your family?",
+      "What does your father do?",
+      "What do you usually do with your family on weekends?",
+      "Who are you closest to in your family?"
+    ]
+  },
+  {
+    "id": "food",
+    "data_type": "topic_material",
+    "topic": "food",
+    "topic_description": "Conversations about being hungry, favorite foods, ordering meals, and eating habits.",
+    "key_expressions": [
+      "I'm hungry.",
+      "My favorite food is chicken.",
+      "I'd like a sandwich, please.",
+      "How much is it?",
+      "It tastes really good."
+    ],
+    "assistant_questions": [
+      "What is your favorite food?",
+      "What did you eat for lunch today?",
+      "Do you like spicy food?",
+      "How often do you eat out?"
+    ]
+  },
+  {
+    "id": "hobbies",
+    "data_type": "topic_material",
+    "topic": "hobbies",
+    "topic_description": "Conversations about free-time activities, interests, and things people enjoy doing after school or on weekends.",
+    "key_expressions": [
+      "My hobby is playing soccer.",
+      "I enjoy listening to music.",
+      "I'm interested in drawing.",
+      "I play games on weekends.",
+      "I want to learn the guitar."
+    ],
+    "assistant_questions": [
+      "What do you like to do in your free time?",
+      "How long have you had this hobby?",
+      "Is there a new hobby you want to try?",
+      "Do you have a hobby you do with friends?"
+    ]
+  }
+]
